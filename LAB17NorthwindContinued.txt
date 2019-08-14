@@ -1,0 +1,40 @@
+--1. SELECT * FROM Customers;
+
+--2. SELECT * FROM Customers WHERE City = 'London'
+--	 or City = 'Paris'
+
+--3. SELECT DISTINCT City From Customers
+
+--4. SELECT * FROM Employees ORDER BY FirstName
+
+--5. SELECT AVG(Salary) FROM Employees
+
+--6. SELECT FirstName FROM Employees 
+--   WHERE Salary = (SELECT MAX(Salary) FROM Employees)
+
+--7. SELECT * FROM Employees WHERE Notes LIKE '%BA%'
+
+--8. SELECT productID, SUM(UnitPrice * (1- Discount) * Quantity) 
+--   FROM [Order Details] GROUP BY ProductID
+
+--9. SELECT * FROM Employees WHERE HireDate > '1/1/1994'
+
+--10. SELECT DATEDIFF(year, HireDate, GETDATE()) FROM Employees
+
+--11. SELECT * FROM Products ORDER BY QuantityPerUnit
+	--SELECT * FROM Products ORDER BY QuantityPerUnit desc
+
+--12. SELECT * FROM Products WHERE UnitsInStock < 6
+
+--13. SELECT * FROM Products WHERE Discontinued = 1
+
+--14. SELECT * FROM Products where ProductName LIKE '%tofu%'
+
+--15. SELECT ProductName FROM Products WHERE 
+--    UnitPrice = (SELECT MAX(UnitPrice) FROM Products);
+
+--16. SELECT * FROM Employees WHERE HireDate > '1/1/1993'
+
+--17. SELECT * FROM Employees WHERE TitleOfCourtesy = 'Ms.' or TitleOfCourtesy = 'Mrs.'
+
+--18. SELECT * FROM Employees WHERE HomePhone LIKE '%(206)%'
